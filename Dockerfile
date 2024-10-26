@@ -1,8 +1,8 @@
 # Use a base Python image
-FROM python:3.10-slim
+FROM python:3.9
 
-# Set the working directory in the container
-# WORKDIR /app
+# Install Jupyter and any other dependencies
+RUN pip install jupyter pandas numpy matplotlib  # Add other libraries as needed
 
 # Copy your requirements file
 COPY requirements.txt .
@@ -10,11 +10,11 @@ COPY requirements.txt .
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the port Jupyter will run on
-EXPOSE 8888
 
-# Run Jupyter Notebook on container start
-#CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
+# Set the working directory
+WORKDIR /app
 
-# I dont want to run jupyter notebook on container start I want to run my ipynb file
-CMD ["python", "A2.ipynb"]
+# Copy your notebook file
+COPY A2.ipynb .
+
+# to build use: docker build -t jupyter-notebook .
