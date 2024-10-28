@@ -40,12 +40,10 @@ Skills Developed: Deep learning model design, training, regularization, and eval
 
 # How to Run the Code
 
-- Clone the repository: git clone https://github.com/YourUsername/ml-engineering-assignments.git
-- Navigate to the assignment folder: cd <Directory>
+- Clone the repository: git clone https://github.com/AbdullaSadoun/Cyber-Attacks-Machine-Learning.git
+- Navigate to the assignment folder: cd "Directory"
 - Open the Jupyter Notebook and run the cells: jupyter notebook
 
 # Acknowledgements
 
-These assignments were completed as part of the Machine Learning for Engineers course under the guidance of Professor [Instructor's Name] at [University Name]. Special thanks to the open-source contributors of the datasets and libraries used in this project.
-
-
+These assignments were completed as part of the Machine Learning for Engineers course under the guidance of Professor Issam Hammad at Dalhousie University. Special thanks to the open-source contributors of the datasets and libraries used in this project.
